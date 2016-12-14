@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_event_detail"
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+
+
+        android:background="#90000000">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:id="@+id/imageLay">
+
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:id="@+id/image"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/nameLay"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="15dp"
+            android:background="#828da9"
+            android:layout_below="@+id/imageLay"
+            >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/name1"
+            android:text="Name"
+            android:textSize="30dp"
+
+            android:textAlignment="center"
+            android:textStyle="bold"
+
+            android:layout_marginTop="20dp"
+            android:textColor="#ffffff" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/name"
+                android:textAlignment="center"
+                android:textSize="24dp"
+                android:textStyle="bold"
+    android:textColor="@android:color/holo_orange_light"
+                android:layout_marginTop="13dp"
+                android:layout_below="@+id/name1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/addressLay"
+            android:layout_below="@id/nameLay"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="20dp"
+            android:background="#828da9">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/location1"
+            android:textSize="30dp"
+            android:text="Address"
+            android:textAlignment="center"
+            android:textStyle="bold"
+
+            android:layout_marginTop="20dp"
+            android:textColor="#ffffff" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/location"
+                android:textSize="24dp"
+                android:textColor="@android:color/holo_orange_light"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:layout_below="@+id/location1"
+                android:layout_marginTop="10dp"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/addressLay"
+            android:id="@+id/descriptionLay"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="#828da9">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/description1"
+            android:text="Description"
+            android:textSize="30dp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+
+            android:layout_marginTop="20dp"
+            android:textColor="#ffffff" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/description"
+                android:textSize="24dp"
+                android:textColor="@android:color/holo_orange_light"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:layout_below="@+id/description1"
+                android:layout_marginTop="10dp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/descriptionLay"
+            android:id="@+id/dateLay"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="#828da9">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/date1"
+            android:textSize="30dp"
+            android:text="Start Date"
+            android:textStyle="bold"
+
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"
+            android:textColor="#ffffff" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/date"
+                android:textSize="24dp"
+                android:textColor="@android:color/holo_orange_light"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:layout_below="@+id/date1"
+                android:layout_marginTop="10dp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dateLay"
+            android:id="@+id/enddateLay"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="#828da9">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/endDate"
+                android:textSize="30dp"
+                android:text="End Date"
+                android:textStyle="bold"
+
+                android:textAlignment="center"
+                android:layout_marginTop="20dp"
+                android:textColor="#ffffff" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/enddateText"
+                android:textSize="24dp"
+                android:textColor="@android:color/holo_orange_light"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:layout_below="@+id/endDate"
+                android:layout_marginTop="10dp"/>
+        </RelativeLayout>
+       <RelativeLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/seatsLay"
+           android:layout_marginBottom="15dp"
+           android:layout_below="@id/enddateLay"
+           android:layout_marginLeft="20dp"
+           android:layout_marginRight="20dp"
+           android:background="#828da9">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/participant1"
+            android:textSize="30dp"
+            android:text="Number of seats"
+            android:textAlignment="center"
+            android:textStyle="bold"
+
+            android:layout_marginTop="20dp"
+            android:textColor="#ffffff" />
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/participant"
+               android:textSize="24dp"
+               android:textColor="@android:color/holo_orange_light"
+               android:textAlignment="center"
+               android:textStyle="bold"
+               android:layout_below="@+id/participant1"
+               android:layout_marginTop="10dp"/>
+       </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/costLay"
+            android:layout_marginBottom="15dp"
+            android:layout_below="@id/seatsLay"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="#828da9">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cost"
+                android:textSize="30dp"
+                android:text="Fees"
+                android:textAlignment="center"
+                android:textStyle="bold"
+
+                android:layout_marginTop="20dp"
+                android:textColor="#ffffff" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/costText"
+                android:textSize="24dp"
+                android:textColor="@android:color/holo_orange_light"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:layout_below="@+id/cost"
+                android:layout_marginTop="10dp"/>
+        </RelativeLayout>
+
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/costLay"
+        android:layout_marginTop="20dp"
+        android:text="Register"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:onClick="RegisForm"
+        android:textSize="20sp"
+        android:background="@color/colorPrimary" />
+
+
+
+
+    </RelativeLayout>
+    </ScrollView>

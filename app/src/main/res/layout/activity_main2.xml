@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0"
+
+        android:orientation="horizontal" >
+<RelativeLayout
+    android:id="@+id/button1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#351b32"
+    android:layout_weight="1.0"
+    android:text="Button" >
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:src="@mipmap/signin"
+        android:id="@+id/signinLogo"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        android:textSize="26dp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/signinLogo"/>
+
+
+</RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+
+            android:text="Button"
+            android:background="#2d6092">
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:src="@mipmap/signup"
+                android:id="@+id/signuplogo"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"></ImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign Up"
+                android:textSize="26dp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/signuplogo"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FF2D6092"
+            android:layout_weight="1.0"
+            android:text="Button" >
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:src="@mipmap/rec"
+                android:id="@+id/recLogo"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="About us"
+                android:textSize="26dp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/recLogo"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/button4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#351b32"
+            android:layout_weight="1.0"
+            android:text="Button" >
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@mipmap/explore"
+                android:id="@+id/exploreLogo"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Explore"
+                android:textSize="26dp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/exploreLogo"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

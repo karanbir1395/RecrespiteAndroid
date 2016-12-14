@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+
+        android:id="@+id/scrollLay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:id="@+id/relLay"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:id="@+id/myProfileLay"
+            android:layout_alignParentTop="true"
+            android:onClick="myProfile"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="39dp"
+            android:layout_marginEnd="39dp">
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="60dp"
+                android:id="@+id/profileImage"
+                android:layout_marginTop="20dp"
+                app:srcCompat="@mipmap/myprofile" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:textSize="20sp"
+                android:layout_marginTop="40dp"
+                android:layout_alignRight="@+id/profileImage"
+                android:layout_alignParentRight="true"
+
+                android:text="My Profile"/>
+
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+           android:layout_below="@+id/myProfileLay"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/profView"
+            android:layout_marginRight="20dp"
+            android:background="#0a0909" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:id="@+id/oneToOneLay"
+            android:onClick="OneToOne"
+            android:layout_below="@+id/myProfileLay"
+
+            android:layout_marginRight="39dp"
+            android:layout_marginEnd="39dp">
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="60dp"
+                android:id="@+id/oneImage"
+                android:layout_marginTop="20dp"
+                app:srcCompat="@mipmap/home" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:textSize="20sp"
+                android:layout_marginTop="40dp"
+                android:layout_alignRight="@+id/oneImage"
+                android:layout_alignParentRight="true"
+
+                android:text="1 To 1"/>
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/oneToOneLay"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/oneView"
+            android:layout_marginRight="20dp"
+            android:background="#0a0909" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:id="@+id/groupsLay"
+            android:layout_below="@+id/oneToOneLay"
+            android:onClick="OpenEvents"
+            android:layout_marginRight="39dp"
+            android:layout_marginEnd="39dp">
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="60dp"
+                android:id="@+id/groupsImage"
+                android:layout_marginTop="20dp"
+                app:srcCompat="@mipmap/events" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:textSize="20sp"
+                android:layout_marginTop="40dp"
+                android:layout_alignRight="@+id/groupsImage"
+                android:layout_alignParentRight="true"
+
+                android:text="Groups"/>
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/groupsLay"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/groupsView"
+            android:layout_marginRight="20dp"
+            android:background="#0a0909" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:id="@+id/reqLay"
+            android:layout_below="@+id/groupsLay"
+            android:onClick="reqEvent"
+            android:layout_marginRight="39dp"
+            android:layout_marginEnd="39dp">
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="60dp"
+                android:id="@+id/reqGroup"
+                android:layout_marginTop="20dp"
+                app:srcCompat="@mipmap/ques" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:textSize="20sp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="40dp"
+                android:layout_alignRight="@+id/reqGroup"
+                android:layout_alignParentRight="true"
+
+                android:text="Request Group"/>
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/reqLay"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/reqView"
+            android:layout_marginRight="20dp"
+            android:background="#0a0909" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:id="@+id/articleLibLay"
+            android:onClick="openLib"
+            android:layout_below="@+id/reqLay"
+
+            android:layout_marginRight="39dp"
+            android:layout_marginEnd="39dp">
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="60dp"
+                android:id="@+id/articleImage"
+                android:layout_marginTop="20dp"
+                app:srcCompat="@mipmap/library" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:textSize="20sp"
+                android:layout_marginTop="40dp"
+                android:layout_alignRight="@+id/articleImage"
+                android:layout_alignParentRight="true"
+
+                android:text="Articles Library"/>
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/articleLibLay"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/articleView"
+            android:layout_marginRight="20dp"
+            android:background="#0a0909" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:id="@+id/LogoutLay"
+            android:layout_below="@+id/articleLibLay"
+            android:onClick="logout"
+            android:layout_marginRight="39dp"
+            android:layout_marginEnd="39dp">
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="65dp"
+                android:layout_marginLeft="60dp"
+                android:id="@+id/logoutImage"
+                android:layout_marginTop="20dp"
+                app:srcCompat="@mipmap/logout" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:textSize="20sp"
+                android:layout_marginTop="40dp"
+                android:layout_alignRight="@+id/logoutImage"
+                android:layout_alignParentRight="true"
+
+                android:text="Logout"/>
+
+
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/LogoutLay"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/logoutView"
+            android:layout_marginRight="20dp"
+            android:background="#0a0909" />
+    </RelativeLayout>
+
+    </ScrollView>

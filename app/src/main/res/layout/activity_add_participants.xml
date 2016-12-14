@@ -1,0 +1,187 @@
+        <ScrollView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbarAlwaysDrawHorizontalTrack="true"
+           android:scrollbarStyle="insideInset"
+            android:fillViewport="true"
+            android:scrollbars="vertical"
+
+            android:background="#ffffff">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="First Name"
+            android:layout_below="@+id/relativeLayout5"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/txtFname"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/etFirstName"
+                    android:layout_marginLeft="20dp"
+                    android:layout_below="@+id/txtFname"
+                    android:hint=" First Name *"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Last Name"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/txtlname"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/etFirstName"
+                    android:layout_marginTop="10dp"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/etLastName"
+                    android:layout_below="@+id/txtlname"
+                    android:hint="Last Name"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Age"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:id="@+id/txtAge"
+                    android:layout_below="@+id/etLastName"
+                    android:layout_marginLeft="10sp"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/etAge"
+                    android:layout_marginLeft="20dp"
+                    android:inputType="number"
+                    android:layout_below="@+id/txtAge"
+                    android:hint="Age*"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Please select gender"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:id="@+id/txtGender"
+
+            android:layout_below="@+id/etAge"
+            />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Please select participant's diagnosis"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20sp"
+                    android:id="@+id/txtDiagnsis"
+
+                    android:layout_below="@+id/spinnerGender"
+                    />
+                <Spinner
+                    android:layout_width="220dp"
+                    android:layout_height="35dp"
+                    android:id="@+id/spinnerDiagnosis"
+                    android:layout_gravity="center_horizontal"
+                    android:drawSelectorOnTop="true"
+                    android:spinnerMode="dropdown"
+                    android:background="#1ab4ff"
+                    android:textColor="#FFFFFF"
+                    android:layout_centerHorizontal="true"
+                    android:textAlignment="center"
+                    android:layout_marginTop="20dp"
+
+                    android:layout_marginRight="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_below="@+id/txtDiagnsis"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtInterest"
+                    android:textSize="20sp"
+                    android:text="Program Of Interest"
+                    android:layout_marginTop="20dp"
+
+                    android:textStyle="bold"
+                    android:layout_marginLeft="20dp"
+                    android:layout_below="@+id/spinnerDiagnosis"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/etProgramInterest"
+                    android:inputType="textAutoCorrect"
+                    android:layout_marginLeft="20dp"
+                    android:hint="Program of Interest"
+                    android:layout_below="@+id/txtInterest" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Notes"
+            android:textSize="20sp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/txtNotes"
+            android:layout_below="@+id/etProgramInterest"
+            android:textStyle="bold"/>
+                <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="20dp"
+                        android:id="@+id/etNotes"
+                          android:layout_marginLeft="20dp"
+                        android:inputType="textAutoCorrect"
+                        android:layout_below="@+id/txtNotes"
+                        android:hint="Notes"/>
+
+                <Spinner
+                    android:layout_width="220dp"
+                    android:layout_height="35dp"
+                    android:id="@+id/spinnerGender"
+                    android:entries="@array/spinner_item"
+                    android:layout_gravity="center_horizontal"
+                    android:drawSelectorOnTop="true"
+                    android:spinnerMode="dropdown"
+                    android:background="#1ab4ff"
+                    android:layout_marginTop="20dp"
+                    android:textColor="#FFFFFF"
+                    android:layout_centerHorizontal="true"
+                    android:textAlignment="center"
+                    android:theme="@android:style/Theme.DeviceDefault"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_below="@+id/txtGender"
+                     />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Add Participant"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:onClick="home"
+                    android:background="#1ab4ff"
+                    android:layout_marginTop="8dp"
+                    android:layout_below="@+id/etNotes"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/buttonPart" />
+
+
+            </RelativeLayout>
+        </ScrollView>

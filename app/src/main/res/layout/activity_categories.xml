@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:fillViewport="true"
+    android:scrollbars="vertical"
+
+    android:background="#ffffff">
+
+    <GridLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:rowCount="6">
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:id="@+id/parent"
+    android:layout_row="1"
+    android:onClick="signUp"
+    android:layout_column="0"
+    android:contentDescription="Parents"
+    android:background="@drawable/parents">
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="30dp"
+    android:textColor="#ffffff"
+    android:layout_centerVertical="true"
+    android:layout_centerHorizontal="true"
+    android:textStyle="bold"
+    android:text="Parents"/>
+    </RelativeLayout>
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:id="@+id/caretaker"
+    android:layout_row="2"
+    android:onClick="signUp"
+    android:contentDescription="Care Giver"
+    android:layout_column="0"
+
+    android:background="@drawable/caregiver">
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="30dp"
+    android:textColor="#ffffff"
+    android:textStyle="bold"
+    android:text="Care Giver"
+    android:layout_centerVertical="true"
+    android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:id="@+id/caseWorker"
+    android:layout_row="4"
+    android:layout_column="0"
+    android:onClick="signUp"
+    android:contentDescription="Professional"
+    android:background="@drawable/caseworker">
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="30dp"
+    android:textColor="#ffffff"
+    android:layout_centerVertical="true"
+    android:layout_centerHorizontal="true"
+    android:textStyle="bold"
+    android:text="Professional"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:id="@+id/adultChild"
+    android:onClick="signUp"
+    android:layout_row="3"
+    android:layout_column="0"
+    android:contentDescription="Individual"
+    android:background="@drawable/adultchild">
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="30dp"
+    android:gravity="center"
+    android:layout_marginLeft="40dp"
+    android:layout_marginRight="90dp"
+    android:textColor="#ffffff"
+    android:layout_centerVertical="true"
+    android:layout_centerHorizontal="true"
+    android:textStyle="bold"
+    android:text="Individual"/>
+    </RelativeLayout>
+    </GridLayout>
+    </ScrollView>

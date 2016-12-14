@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">RecRespite</string>
+    <string-array name="spinner_item">
+
+        <item>Male</item>
+        <item>Female</item>
+
+    </string-array>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="navigation">Navigation</string>
+    <string name="action_settings">Settings</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="selected_item">Selected item</string>
+    <string name="newEventVerbage">"Recreational Respite's group program is customized based upon the individual needs, interests, abilities and strengths of the client.  Therapeutic recreation focuses on inclusion, emphasizes participation, is person-centred and is goal driven. For some of the programs we have done If you wish to request a program in your area, please write us here."
+
+    </string>
+</resources>

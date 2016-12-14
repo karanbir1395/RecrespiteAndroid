@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/common_google_signin_btn_text_light_focused">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_registration"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+
+  >
+    <ImageView
+        android:layout_width="220dp"
+        android:layout_height="190dp"
+        app:srcCompat="@drawable/logo"
+        android:id="@+id/logo"
+
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/registerborder"
+        android:id="@+id/nameLay"
+        android:layout_below="@id/logo">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/name"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:text="   Name of Participant"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/nameVal"
+            android:layout_marginTop="40dp"
+            android:layout_below="@id/name"
+            android:textSize="18dp"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/registerborder"
+        android:id="@+id/ageLay"
+        android:layout_below="@id/nameLay">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/age"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:text="   Age of Participant"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ageVal"
+            android:layout_marginTop="40dp"
+            android:layout_below="@id/age"
+            android:textSize="18dp"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="40dp"
+        android:id="@+id/ContactInfoLay"
+        android:background="@drawable/registerborder"
+        android:layout_below="@id/ageLay">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/contact"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:text="   Contact Information"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/conatctVal"
+            android:layout_marginTop="40dp"
+            android:layout_below="@id/contact"
+            android:textSize="18dp"
+            android:layout_marginLeft="10dp"
+
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="40dp"
+        android:id="@+id/phoneLay"
+        android:background="@drawable/registerborder"
+        android:layout_below="@id/ContactInfoLay">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/phone"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:text="   Phone"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/PhoneVal"
+            android:layout_marginTop="40dp"
+            android:layout_below="@id/phone"
+            android:textSize="18dp"
+            android:layout_marginLeft="10dp"
+
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/registerborder"
+        android:id="@+id/emailLay"
+        android:layout_below="@id/phoneLay">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/email"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:text="   Email"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/emailVal"
+            android:layout_marginTop="40dp"
+            android:layout_below="@id/email"
+            android:textSize="18dp"
+            android:layout_marginLeft="10dp"
+
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="40dp"
+        android:id="@+id/progarmInLay"
+        android:background="@drawable/registerborder"
+        android:layout_below="@id/emailLay">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/progarmIn"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:text="   Program of Interest"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/progarmInVal"
+            android:layout_marginTop="40dp"
+            android:layout_below="@id/progarmIn"
+            android:textSize="18dp"
+            android:layout_marginLeft="10dp"
+            android:hint="   Program of interest"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="40dp"
+        android:id="@+id/progrmaLocLay"
+        android:background="@drawable/registerborder"
+        android:layout_below="@id/progarmInLay">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/progarmLoc"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:text="   Program Location"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/progarmLocLay"
+            android:layout_marginTop="40dp"
+            android:layout_below="@id/progarmLoc"
+            android:textSize="18dp"
+            android:hint="   program Location"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/registerborder"
+        android:id="@+id/paymentLay"
+        android:layout_below="@id/progrmaLocLay">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/payment"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:text="   Payment method"/>
+
+       <Spinner
+           android:layout_width="250dp"
+           android:layout_height="40dp"
+           android:id="@+id/paymentVal"
+            android:layout_centerHorizontal="true"
+           android:layout_centerVertical="true"
+           android:layout_below="@+id/payment"></Spinner>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/registerborder"
+        android:id="@+id/specialNeedsLay"
+        android:layout_below="@id/paymentLay">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/special"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:text="   Special Needs"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:id="@+id/specialVal"
+            android:hint="   Special Needs"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/special"
+            android:textSize="18dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="40dp"
+        android:id="@+id/RecInLay"
+        android:background="@drawable/registerborder"
+        android:layout_below="@id/specialNeedsLay">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Interst"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:text="   Recreational Interest"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:id="@+id/recInVal"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/Interst"
+            android:textSize="18dp"
+            android:hint="   Recreational Interest"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="40dp"
+        android:id="@+id/goalsLay"
+        android:background="@drawable/registerborder"
+        android:layout_below="@id/RecInLay">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/goals"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:text="   Goals and Expectations"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:id="@+id/goalslVal"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/goals"
+            android:textSize="18dp"
+            android:hint="   Goals and Expectation"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginTop="40dp"
+        android:id="@+id/allergiesLay"
+        android:background="@drawable/registerborder"
+        android:layout_below="@id/goalsLay">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/allergies"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text=" Allergies and Medical Conditions to be aware of"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:id="@+id/alergiesVal"
+            android:layout_marginTop="46dp"
+            android:textSize="18dp"
+            android:hint="   Allergies"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:textSize="22dp"
+        android:onClick="reisterForEvent"
+        android:layout_below="@id/allergiesLay"
+        android:layout_marginTop="20dp"
+        android:background="#FFCA5684"
+        android:textColor="#ffffff"
+        android:textStyle="normal|bold" />
+
+</RelativeLayout>
+</ScrollView>

@@ -1,0 +1,120 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:id="@+id/scroll"
+    android:layout_height="wrap_content"
+    android:scrollbarAlwaysDrawHorizontalTrack="true"
+    android:scrollbarStyle="insideInset"
+    android:fillViewport="true"
+    android:scrollbars="vertical"
+
+    android:background="#ffffff">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/etFirstName"
+            android:layout_below="@+id/relativeLayout5"
+            android:hint="First Name"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/etLastName"
+            android:layout_below="@+id/etFirstName"
+            android:hint="Last Name"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/etAge"
+            android:inputType="number"
+            android:layout_below="@+id/etLastName"
+            android:hint="Age"/>
+
+        <Spinner
+            android:layout_width="220dp"
+            android:layout_height="35dp"
+            android:id="@+id/spinnerDiagnosis"
+
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"
+            style="@style/spinner_style"
+            android:popupBackground="#cccccc"
+            android:layout_marginRight="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_below="@+id/spinnerGender"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/etProgramInterest"
+            android:inputType="textAutoCorrect"
+            android:hint="Program of Interest"
+            android:layout_below="@+id/spinnerDiagnosis" />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/etNotes"
+
+            android:inputType="textAutoCorrect"
+            android:layout_below="@+id/etProgramInterest"
+            android:hint="Notes"/>
+
+        <Spinner
+            android:layout_width="220dp"
+            android:layout_height="35dp"
+            android:id="@+id/spinnerGender"
+            android:entries="@array/spinner_item"
+            android:layout_gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+          android:textAlignment="center"
+            style="@style/spinner_style"
+            android:popupBackground="#cccccc"
+            android:layout_marginRight="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_below="@+id/etAge"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Edit Participant"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:onClick="EditPart"
+            android:background="#1ab4ff"
+            android:layout_marginTop="8dp"
+            android:layout_below="@+id/etNotes"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/buttonPart" />
+
+        <ProgressBar
+            style="@android:style/Widget.ProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinnerGender"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_alignLeft="@+id/spinnerDiagnosis"
+            android:layout_alignStart="@+id/spinnerDiagnosis"
+            android:layout_marginLeft="54dp"
+            android:layout_marginStart="54dp"
+            android:id="@+id/progressBar" />
+
+
+    </RelativeLayout>
+</ScrollView>
